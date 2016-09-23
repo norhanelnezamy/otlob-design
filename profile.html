@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <title></title>
+</head>
+<body>
+<!-- <section class="header-banner text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3 class="text-center"><span>50% </span> عرض خاص</h3>
+            </div>
+        </div>
+    </div>
+</section> -->
+<section class="header-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="header-top-right">
+                    <ul class="list-unstyled list-inline">
+                        <li class="dropdown cart">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="badge">2</span><i class="fa fa-shopping-bag fa-lg" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu dropdown-cart">
+                                <li class="col-sm-12" style="border:none; font-weight:bolder;">
+                                    <div>
+                                        <p class="text-right">العناصر المضافه حاليا </p>
+                                    </div>
+                                </li>
+                                <li class="col-sm-12">
+                                    <div class="cart-item text-right">
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                                <img src="img/product1.jpg" class="img-responsive">
+                                            </div>
+                                            <div class="col-lg-7 col-md-7 col-xs-7 col-xs-7">
+                                                <div class="close-edit text-left">
+                                                    <i class="fa fa-close" aria-hidden="true"></i>
+                                                    <i class="fa fa-edit" aria-hidden="true"></i>
+                                                </div>
+                                                <p>
+                                                    منتج <br>
+                                                    <span>45.18</span><br>
+                                                    نوع : 1
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-12">
+                                    <div class="cart-item text-right">
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                                <img src="img/product3.jpg" class="img-responsive">
+                                            </div>
+                                            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                                                <div class="close-edit text-left">
+                                                    <i class="fa fa-close" aria-hidden="true"></i>
+                                                    <i class="fa fa-edit" aria-hidden="true"></i>
+                                                </div>
+                                                <p>
+                                                    منتج <br>
+                                                    <span>45.18</span><br>
+                                                    نوع : 1
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12">
+                                    <div class="cart-item text-right">
+                                        <p>الاجمالى: <span>985.15$</span></p>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12">
+                                    <div class="cart-item">
+
+                                        <button class="btn btn-danger pull-right checkout"> دفع <i class="fa fa-check" aria-hidden="true"></i></button>
+                                        <button class="btn btn-danger pull-left"> البطاقه <i class="fa fa-shopping-bag" aria-hidden="true"></i></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown search">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><div class="form-group">
+                                    <input type="text" class="form-control" placeholder="ابحث...">
+                                </div></li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="#"><span class="badge">0</span><i class="fa fa-heart fa-lg" aria-hidden="true"></i></a></li> -->
+                        <li><a href="login.html"><i class="fa fa-key fa-lg" aria-hidden="true"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="header-top-left text-left">
+                    <ul class="list-unstyled list-inline">
+                        <li>مرحبا بك</li>
+                        <li><strong>تليفون : </strong>01255852</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="menu menu-bg">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">معارض</a>
+            </div>
+
+
+            <div class="collapse navbar-collapse js-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown mega-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">الرئيسيه <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+
+                        <ul class="dropdown-menu mega-dropdown-menu row">
+                            <li class="col-sm-2">
+                                <ul class="text-right">
+                                    <li><img src="img/watches-img.png" class="img-responsive"></li>
+                                    <li class="dropdown-header"><h3>تفاح</h3></li>
+                                    <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> تفاح اصفر </a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> تفاح اخضر</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> تفاح عادى</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> تفاح ماركه</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul class="text-right">
+                                    <li><img src="img/shoes-img.png" class="img-responsive"></li>
+                                    <li class="dropdown-header"><h3>تفاح</h3></li>
+                                    <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> تفاح اصفر </a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> تفاح اخضر</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> تفاح عادى</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> تفاح ماركه</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul class="text-right">
+                                    <li><img src="img/sunglasses-img.png" class="img-responsive"></li>
+                                    <li class="dropdown-header"><h3>تفاح</h3></li>
+                                    <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> تفاح اصفر </a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> تفاح اخضر</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> تفاح عادى</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> تفاح ماركه</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul class="text-right">
+                                    <li><img src="img/shirts-img.png" class="img-responsive"></li>
+                                    <li class="dropdown-header"><h3>تفاح</h3></li>
+                                    <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> تفاح اصفر </a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> تفاح اخضر</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> تفاح عادى</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> تفاح ماركه</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-4">
+                                <ul class="text-center offer">
+                                    <li><img src="img/product8.jpg" style="width:175px;"></li>
+                                    <li><h3>42.15$</h3></li>
+                                    <li><p>يوجد لدينا جميع انواع الفواكه ومنتجات الالبان</p></li>
+                                    <li><button class="btn btn-danger btn-block">اشترى الان</button></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#">صفحات</a></li>
+                    <li><a href="#">خضروات</a></li>
+                    <li><a href="#">فواكه</a></li>
+                    <li><a href="#">ألبان</a></li>
+                    <li><a href="#">سلطه</a></li>
+                    <li><a href="#">وجبات خفيفه</a></li>
+                </ul>
+
+            </div>
+            <!-- /.nav-collapse -->
+        </div>
+    </nav>
+
+</section>
+<section class="profile-edit">
+    <div class="about-us slider">
+        <div class="breadcrumb-div">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">الصفحه الرئيسيه</a></li>
+                            <li class="breadcrumb-item active">حسابك الشخصى</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="profile">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-4 col-xs-8">
+                <ul class="list-group">
+                    <li class="list-group-item" data-toggle="collapse" data-target="#activity"><a href="#recent" aria-disabled="false" class="item-disabled"><i class="fa fa-refresh" aria-hidden="true"></i> نشاطى </a></li>
+                    <ul class="sub-item collapse list-unstyled nav nav-tabs" id="activity" role="tablist">
+                        <li role="presentation"><a href="#recent" aria-controls="profile" role="tab" data-toggle="tab">الطلبات الحاليه</a></li>
+                        <li role="presentation"><a href="#prevs" aria-controls="prevs" role="tab" data-toggle="tab">الطلبات السابقه </a></li>
+                    </ul>
+                    <!--<li class="list-group-item"  data-toggle="collapse" data-target="#acc-setting"><a href="#settings" aria-disabled="false" class="item-disabled"><i class="fa fa-user" aria-hidden="true"></i> حسابى </a></li>
+                    <ul class="sub-item collapse list-unstyled nav nav-tabs" id="acc-setting" role="tablist">
+                        <li role="presentation"><a href="#settings" aria-controls="prevs" role="tab" data-toggle="tab">تعديل الحساب</a></li>
+                    </ul>-->
+                    <li class="list-group-item" data-toggle="collapse" data-target="#acc-setting"><a href="#recent" aria-disabled="false" class="item-disabled"><i class="fa fa-user" aria-hidden="true"></i> حسابى </a></li>
+                    <ul class="sub-item collapse list-unstyled nav nav-tabs" id="acc-setting" role="tablist">
+                        <li role="presentation"><a href="#recent" aria-controls="profile" role="tab" data-toggle="tab">الطلبات الحاليه</a></li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"> تعديل الحساب </a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="col-lg-9 col-sm-8 col-xs-12">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="recent">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="customer-activity">
+                                    <div class="product-checked">
+                                        <div class="product-size">
+                                            <a href="#"><img src="img/product3.jpg" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#"><h4>فلفل رومى</h4></a>
+                                        <h5>احمر , اخضر , اصفر</h5>
+                                        <div class="rating">
+                                            <div class="rating-percent" style="width:80%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="customer-activity">
+                                    <div class="product-checked">
+                                        <div class="product-size">
+                                            <a href="#"><img src="img/product10.jpg" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#"><h4>فلفل رومى</h4></a>
+                                        <h5>احمر , اخضر , اصفر</h5>
+                                        <div class="rating">
+                                            <div class="rating-percent" style="width:80%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="customer-activity">
+                                    <div class="product-checked">
+                                        <div class="product-size">
+                                            <a href="#"><img src="img/product16.jpg" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#"><h4>فلفل رومى</h4></a>
+                                        <h5>احمر , اخضر , اصفر</h5>
+                                        <div class="rating">
+                                            <div class="rating-percent" style="width:80%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="prevs">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="customer-activity">
+                                    <div class="product-checked">
+                                        <div class="product-size">
+                                            <a href="#"><img src="img/product9.jpg" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#"><h4>فلفل رومى</h4></a>
+                                        <h5>احمر , اخضر , اصفر</h5>
+                                        <div class="rating">
+                                            <div class="rating-percent" style="width:80%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="customer-activity">
+                                    <div class="product-checked">
+                                        <div class="product-size">
+                                            <a href="#"><img src="img/product11.jpg" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#"><h4>فلفل رومى</h4></a>
+                                        <h5>احمر , اخضر , اصفر</h5>
+                                        <div class="rating">
+                                            <div class="rating-percent" style="width:80%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="customer-activity">
+                                    <div class="product-checked">
+                                        <div class="product-size">
+                                            <a href="#"><img src="img/product14.jpg" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#"><h4>فلفل رومى</h4></a>
+                                        <h5>احمر , اخضر , اصفر</h5>
+                                        <div class="rating">
+                                            <div class="rating-percent" style="width:80%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="settings">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="personal-info">
+                                    <h3>معلومات شخصيه</h3>
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label class="col-sm-3 col-xs-5 control-label">اسم العميل : </label>
+                                            <div class="col-sm-8 col-xs-12">
+                                                <input class="form-control" type="text" value="محمد85">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 col-xs-5 control-label">  التليفون :</label>
+                                            <div class="col-sm-8 col-xs-12">
+                                                <input class="form-control" type="text" value="2555622">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 col-xs-5 control-label">كلمه السر :</label>
+                                            <div class="col-sm-8 col-xs-12">
+                                                <input class="form-control" type="password" value="11111122333">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 col-xs-5 control-label"></label>
+                                            <div class="col-sm-8 col-xs-12">
+                                                <input type="button" class="btn btn-danger" value=" حفظ ">
+                                                <span></span>
+                                                <input type="reset" class="btn btn-default" value="الغاء">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/owl.carousel.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
