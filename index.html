@@ -31,7 +31,7 @@
                         <div class="header-top-right">
                             <ul class="list-unstyled list-inline">
                                 <li class="dropdown cart">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="badge">2</span><i class="fa fa-shopping-bag fa-lg" aria-hidden="true"></i></a>
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="badge">2</span><i class="glyphicon glyphicon-shopping-cart fa-lg" aria-hidden="true"></i></a>
                                   <ul class="dropdown-menu dropdown-cart">
                                       <li class="col-sm-12" style="border:none; font-weight:bolder;">
                                         <div>
@@ -95,15 +95,80 @@
                                 <li class="dropdown search">
                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a>
                                   <ul class="dropdown-menu">
-                                    <li><div class="form-group">
-          <input type="text" class="form-control" placeholder="ابحث...">
-        </div></li>
+                                    <li>
+                                      <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="ابحث...">
+                                      </div>
+                                    </li>
                                   </ul>
                                 </li>
                                 <!-- <li><a href="#"><span class="badge">0</span><i class="fa fa-heart fa-lg" aria-hidden="true"></i></a></li> -->
-                                <li><a href="login.html"><i class="fa fa-key fa-lg" aria-hidden="true"></i></a></li>
+                                <li><a href="#log" role="button" class="btn" data-toggle="modal"><i class="fa fa-key fa-lg" aria-hidden="true"></i></a></li>
                             </ul>
-
+                            <div>
+                                <div class="modal fade" id="log" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> &nbsp;
+                                                <h3 class="modal-title" id="myModalLabel">تسجيل الدخول</h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <section class="login">
+                                                    <div class="panel panel-login">
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-md-12 col-xs-12">
+                                                                    <form id="login-form" action="#" method="post" role="form">
+                                                                        <div class="form-group">
+                                                                            <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="اسم المستخدم" value="">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="كلمه السر">
+                                                                        </div>
+                                                                        <div class="col-xs-12 form-group text-right">
+                                                                            <label class="custom-control custom-checkbox">
+                                                                                <input type="checkbox" class="custom-control-input">
+                                                                                <span class="custom-control-indicator"></span>
+                                                                                <span class="custom-control-description">حفظ كلمه السر</span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="col-xs-6 form-group">
+                                                                            <button class="btn btn-danger">تسجيل</button>
+                                                                        </div>
+                                                                    </form>
+                                                                    <form id="register-form" action="#" method="post" role="form">
+                                                                        <h2 class="text-right">او</h2>
+                                                                        <div class="form-group">
+                                                                            <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="اسم المستخدم" value="">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="البريد الالكترونى" value="">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="كلمه السر">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="تاكيد كلمه السر">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-6 col-sm-offset-3 col-xs-6">
+                                                                                   <button class="btn btn-danger">تسجيل</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -127,7 +192,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="index.html">معارض</a>
+                  <a class="navbar-brand" href="index.html">تسوق</a>
                 </div>
 
 
@@ -182,7 +247,7 @@
                               <li><img src="img/product8.jpg" style="width:175px;"></li>
                                 <li><h3>42.15$</h3></li>
                                 <li><p>يوجد لدينا جميع انواع الفواكه ومنتجات الالبان</p></li>
-                                <li><button class="btn btn-danger btn-block">طريقه الاستخدام</button></li>
+                                <li><button class="btn btn-danger btn-block" data-toggle="modal" data-target="#how_use">طريقه الاستخدام</button></li>
                               </ul>
                           </li>
                       </ul>
@@ -202,7 +267,48 @@
               </nav>
 
         </section>
+
         <section class="slider">
+            <section class="city-form">
+                <div class="container">
+                    <div class="row">
+                      <div class="form-container">
+                        <div class="city">
+                          <div class="col-sm-4 col-xs-5">
+                            <div class="ui-select">
+                                <select id="user_time_zone" class="form-control" style="padding: 3px 12px;">
+                                    <option value="" selected disabled>اختر مدينتك</option>
+                                    <option value="Hawaii">المنصوره</option>
+                                    <option value="Alaska">المحله</option>
+                                    <option value="Pacific Time (US &amp; Canada)">طنطا</option>
+                                    <option value="Arizona">القاهره</option>
+                                    <option value="Mountain Time (US &amp; Canada)">الاسكندريه</option>
+                                </select>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 col-xs-5">
+                            <div class="ui-select">
+                                <select id="user_time_zone" class="form-control" style="padding: 3px 12px;">
+                                    <option value="" selected disabled>اختر المنطقه</option>
+                                    <option value="Arizona">حى الجامعه</option>
+                                    <option value="Mountain Time (US &amp; Canada)">احمد ماهر</option>
+                                    <option value="Central Time (US &amp; Canada)">المشايه </option>
+                                    <option value="Eastern Time (US &amp; Canada)">المحافظه</option>
+                                    <option value="Indiana (East)">طلخا</option>
+                                </select>
+                            </div>
+                          </div>
+                          <div class="col-sm-1 col-xs-12">
+                              <button class="btn btn-danger" style="margin: 0 auto; display: block;">تسوق</button>
+                          </div>
+                          <div class="col-xs-12">
+                              <button class="btn btn-danger custom-visible-xs btn-block" data-toggle="modal" data-target="#how_use"> طريقه الاستخدام </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                       <!-- Indicators -->
                       <ol class="carousel-indicators">
@@ -218,7 +324,7 @@
                           <div class="carousel-caption">
                             <h1>منتجاتنا</h1>
                             <p class="lead">يوجد لدينا جميع انواع الفواكه ومنتجات الالبان</p>
-                              <button class="btn btn-danger"> طريقه الاستخدام </button>
+                              <button class="btn btn-danger" data-toggle="modal" data-target="#how_use"> طريقه الاستخدام </button>
                           </div>
                         </div>
                         <div class="item">
@@ -226,7 +332,7 @@
                           <div class="carousel-caption">
                             <h1>منتجاتنا</h1>
                             <p class="lead">يوجد لدينا جميع انواع الفواكه ومنتجات الالبان</p>
-                              <button class="btn btn-danger"> طريقه الاستخدام </button>
+                              <button class="btn btn-danger" data-toggle="modal" data-target="#how_use"> طريقه الاستخدام </button>
                           </div>
                         </div>
                           <div class="item">
@@ -234,7 +340,7 @@
                           <div class="carousel-caption">
                             <h1>منتجاتنا</h1>
                             <p class="lead">يوجد لدينا جميع انواع الفواكه ومنتجات الالبان</p>
-                              <button class="btn btn-danger"> طريقه الاستخدام </button>
+                              <button class="btn btn-danger" data-toggle="modal" data-target="#how_use"> طريقه الاستخدام </button>
                           </div>
                         </div>
                       </div>
@@ -249,43 +355,6 @@
                         <span class="sr-only">Next</span>
                       </a>
                     </div>
-        </section>
-        <section class="city-form">
-            <div class="container">
-                <div class="row">
-                    <div class="city">
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-4 col-xs-12">
-                          <div class="ui-select form-group">
-                              <select id="user_time_zone" class="form-control" style="padding: 3px 12px;">
-                                  <option value="" selected disabled>اختر المنطقه </option>
-                                  <option value="Arizona">حى الجامعه</option>
-                                  <option value="Mountain Time (US &amp; Canada)">احمد ماهر</option>
-                                  <option value="Central Time (US &amp; Canada)">المشايه </option>
-                                  <option value="Eastern Time (US &amp; Canada)">المحافظه</option>
-                                  <option value="Indiana (East)">طلخا</option>
-                              </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="ui-select form-group">
-                                <select id="user_time_zone" class="form-control" style="padding: 3px 12px;">
-                                    <option value="" selected disabled>اختر مدينتك </option>
-                                    <option value="Hawaii">المنصوره</option>
-                                    <option value="Alaska">المحله</option>
-                                    <option value="Pacific Time (US &amp; Canada)">طنطا</option>
-                                    <option value="Arizona">القاهره</option>
-                                    <option value="Mountain Time (US &amp; Canada)">الاسكندريه</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
-
-                            <button class="btn btn-danger">تسوق</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
         <section class="offer-banner">
             <div class="container">
@@ -1985,13 +2054,26 @@
                     </div>
                 </div>
             </section>
-
+            <div class="modal fade" id="how_use" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> &nbsp;
+                        </div>
+                        <div class="modal-body">
+                            <section class="container">
+                              <img src="img/1.png" style="width:60%; height:100%;">
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <!-- footer -->
             <section class="footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-9 col-xs-12">
-                            <h1>معارض</h1>
+                            <h1>تسوق</h1>
                             <p> يعتبر اسعارنا من اهم الخضروات لدينا حيث نعتنى بنظافه منتجاتنا لترضى العميل ف كل الحالات
                                 يعتبر اسعارنا من اهم الخضروات لدينا حيث نعتنى بنظافه منتجاتنا لترضى العميل ف كل الحالات
                             </p>
@@ -2028,7 +2110,7 @@
                                         <li><h4>اتصل بنا</h4></li>
                                         <li ><a href="#"><i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i> شارع الجيزة و 6 اكتوبر</a></li>
                                         <li><a href="#"><i class="fa fa-phone fa-lg" aria-hidden="true"></i> 012588225 </a></li>
-                                        <li><a href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>  www.معارض.com </a></li>
+                                        <li><a href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>  www.تسوق.com </a></li>
                                     </ul>
                                 </div>
 
@@ -2050,8 +2132,8 @@
                                         <li class="fb"><a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
                                         <li class="twitter"><a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
                                         <li class="google-plus"><a href="#"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a></li>
-                                        <li class="rss"><a href="#"><i class="fa fa-rss fa-lg" aria-hidden="true"></i></a></li>
-                                        <li class="pinterest"><a href="#"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+                                        <!-- <li class="rss"><a href="#"><i class="fa fa-rss fa-lg" aria-hidden="true"></i></a></li>
+                                        <li class="pinterest"><a href="#"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li> -->
                                         <li class="linkedin"><a href="#"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
                                         <li class="youtube"><a href="#"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a></li>
                                     </ul>

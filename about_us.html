@@ -31,7 +31,7 @@
                         <div class="header-top-right">
                             <ul class="list-unstyled list-inline">
                                 <li class="dropdown cart">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="badge">2</span><i class="fa fa-shopping-bag fa-lg" aria-hidden="true"></i></a>
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="badge">2</span><i class="glyphicon glyphicon-shopping-cart fa-lg" aria-hidden="true"></i></a>
                                   <ul class="dropdown-menu dropdown-cart">
                                       <li class="col-sm-12" style="border:none; font-weight:bolder;">
                                         <div>
@@ -101,8 +101,76 @@
                                   </ul>
                                 </li>
                                 <!-- <li><a href="#"><span class="badge">0</span><i class="fa fa-heart fa-lg" aria-hidden="true"></i></a></li> -->
-                                <li><a href="login.html"><i class="fa fa-key fa-lg" aria-hidden="true"></i></a></li>
+                                <li><a href="#log" role="button" class="btn" data-toggle="modal"><i class="fa fa-key fa-lg" aria-hidden="true"></i></a></li>
                             </ul>
+                            <div>
+                                <div class="modal fade" id="log" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> &nbsp;
+                                                <h3 class="modal-title" id="myModalLabel">تسجيل الدخول</h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <section class="login">
+                                                    <div class="panel panel-login">
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-md-12 col-xs-12">
+                                                                    <form id="login-form" action="#" method="post" role="form">
+                                                                        <div class="form-group">
+                                                                            <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="اسم المستخدم" value="">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="كلمه السر">
+                                                                        </div>
+                                                                        <div class="col-xs-12 form-group text-right">
+                                                                            <label class="custom-control custom-checkbox">
+                                                                                <input type="checkbox" class="custom-control-input">
+                                                                                <span class="custom-control-indicator"></span>
+                                                                                <span class="custom-control-description">حفظ كلمه السر</span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="col-xs-6 form-group">
+                                                                            <button class="btn btn-danger">تسجيل</button>
+                                                                        </div>
+                                                                    </form>
+                                                                    <form id="register-form" action="#" method="post" role="form">
+                                                                        <h2 class="text-right">او</h2>
+                                                                        <div class="form-group">
+                                                                            <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="اسم المستخدم" value="">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="البريد الالكترونى" value="">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="كلمه السر">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="تاكيد كلمه السر">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-6 col-sm-offset-3 col-xs-6">
+                                                                                    <button class="btn btn-danger">تسجيل</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger">حفظ</button>
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">الغاء</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -127,7 +195,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="index.html">معارض</a>
+                  <a class="navbar-brand" href="index.html">تسوق</a>
                 </div>
 
 
@@ -299,7 +367,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-9 col-xs-12">
-                            <h1>معارض</h1>
+                            <h1>تسوق</h1>
                             <p> يعتبر اسعارنا من اهم الخضروات لدينا حيث نعتنى بنظافه منتجاتنا لترضى العميل ف كل الحالات
                                 يعتبر اسعارنا من اهم الخضروات لدينا حيث نعتنى بنظافه منتجاتنا لترضى العميل ف كل الحالات
                             </p>
@@ -336,7 +404,7 @@
                                         <li><h4>اتصل بنا</h4></li>
                                         <li ><a href="#"><i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i> شارع الجيزة و 6 اكتوبر</a></li>
                                         <li><a href="#"><i class="fa fa-phone fa-lg" aria-hidden="true"></i> 012588225 </a></li>
-                                        <li><a href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>  www.معارض.com </a></li>
+                                        <li><a href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>  www.تسوق.com </a></li>
                                     </ul>
                                 </div>
 
@@ -358,8 +426,8 @@
                                         <li class="fb"><a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
                                         <li class="twitter"><a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
                                         <li class="google-plus"><a href="#"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a></li>
-                                        <li class="rss"><a href="#"><i class="fa fa-rss fa-lg" aria-hidden="true"></i></a></li>
-                                        <li class="pinterest"><a href="#"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+                                        <!-- <li class="rss"><a href="#"><i class="fa fa-rss fa-lg" aria-hidden="true"></i></a></li>
+                                        <li class="pinterest"><a href="#"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li> -->
                                         <li class="linkedin"><a href="#"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
                                         <li class="youtube"><a href="#"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a></li>
                                     </ul>
